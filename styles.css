@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
 #mainheading {
     font-weight: 800;
     font-size: 140px;
@@ -46,3 +48,6 @@ ul {
     display: table;
     margin: 0 auto;}
 
+button {
+    font-size: 20px;
+}
