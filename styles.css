@@ -1,53 +1,91 @@
-* {
-    font-family: 'Trebuchet MS', sans-serif;
-}
-#mainheading {
-    font-weight: 800;
-    font-size: 140px;
-    text-align: center;}
+/* ------------------- */
+/* Whole website styles*/
+/* ------------------- */
 
-h1 {
-    font-weight: 800;
-    font-size: 70px;
-    text-align: center;}
+* 
+{font-family: 'Georgia', serif;}
 
-h2 {
-    font-weight: 800;
-    font-size: 50px;
-    text-align: center;}
+body 
+{background-color: #eee;}
 
-img {
-    display: block;
-    margin: 0 auto;}
+.mainbody 
+{background-color: white;
+width: 1000px;
+margin: 0 auto;}
 
-p {
-        margin: 0 auto;
-        width: 50%;
-        font-size: 20px}
+/* ---------------- */
+/* Front page styles*/
+/* ---------------- */
 
-ol {
-    display: table;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 20px}
+#mainheading 
+{font-weight: 800;
+font-size: 140px;
+text-align: center;}
 
-ul {
-    display: table;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 20px}
+.frontpage 
+{padding-top: 10px;
+padding-bottom: 50px;
+padding-left: 250px;
+padding-right: 250px;}
 
-.recipelink {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    font-size: 20px}
+.img_container
+{width: 30%;
+text-align: center;
+display: inline-block;
+margin: 15px;
+font-size: 30px;}
 
-#mainlist {
-    font-size: 40px;
-    display: table;
-    margin: 0 auto;}
+img
+{height: 300px;
+width: 300px;}
 
-button {
-    font-size: 20px;
-}
+
+
+/* ----------------- */
+/* Recipe page styles*/
+/* ----------------- */
+
+h1 
+{font-weight: 800;
+ font-size: 90px;
+ text-align: center;}
+
+h2 
+{font-weight: 800;
+font-size: 50px;
+text-align: center;}
+
+img 
+{display: block;
+margin: 0 auto;}
+
+.recipe_img
+{height: 500px;
+width: 500px;}
+
+p 
+{margin: 0 auto;
+padding: 25px 250px;
+font-size: 20px}
+
+ol 
+{display: table;    
+margin: 0 auto;
+padding: 25px 250px;
+font-size: 20px}
+
+ul 
+{display: table;
+margin: 0 auto;
+width: 50%;
+font-size: 20px}
+
+.recipelink 
+{display: block;
+margin: 0 auto;
+padding: 25px 250px;
+font-size: 20px}
+
+button 
+{font-size: 20px;
+margin: 15px}
