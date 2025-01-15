@@ -127,9 +127,11 @@ width: 1500px;
 padding-left:100px;
 padding-right: 100px;}
 
+.bar_container_recipe_page
+{display: flex;}
 
-
-
+.recipe_page
+{margin-left: 20px;}
 
 
 
