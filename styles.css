@@ -3,7 +3,8 @@
 /* ------------------- */
 
 * 
-{font-family: 'Georgia', serif;}
+{font-family: Verdana, sans-serif;
+}
 
 body 
 {background-color: #eee;}
@@ -11,7 +12,92 @@ body
 .mainbody 
 {background-color: white;
 width: 1000px;
-margin: 0 auto;}
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+flex-shrink: -1;}
+
+/* ---------------- */
+/* Testing new layout*/
+/* ---------------- */
+
+body,
+.container
+{min-height: 30vh;
+background-color: #141414;
+gap: 1em;
+margin: 2em 5em;}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex: 1;
+    background-color: #000000;
+    border-radius: 2em;
+    
+}
+
+section{
+    
+    flex: 4;
+    border-radius: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.col-left{
+    
+    flex: 2;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 2em;
+    min-height: 20vh;
+    
+
+}
+.col-right{
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000a0;
+    border-radius: 2em;
+
+}
+
+@media (max-width: 968px){
+    section,
+    .container.second section{
+        flex-direction: column;
+    }
+    .container{
+        margin: 1em 2em;
+    }
+}
+
+h1 {color: white;}
+h2 {font-size: 40px; margin: 0; color: white;}
+p, ul {font-size: 20px; color: white;}
+a, a:link, a:visited {font-size: 20px; color: white;}
+
+.recipe_text {flex: 2; flex-direction: start; margin: 70px;}
+.recipe_img {flex: 1; text-align: center; margin-left: 70px;}
+.key_ingredients {}
+
+img{max-width: 300px; border-radius: 2em}
+
+ 
+
+/* ---------------- */
+/* FTesting new layout*/
+/* ---------------- */
+
 
 /* ---------------- */
 /* Front page styles*/
@@ -43,27 +129,13 @@ width: 1500px;
 padding-left:100px;
 padding-right: 100px;}
 
-img
-{height: 600px;
-width: 600px;}
 
-.recipe_container
-{display: flex;
-justify-content: flex-start;
-margin-bottom: 50px;}
 
-.frontpage_text 
-{padding: 5px 50px;
-font-size: 30px;
-align-items: center;}
 
-.recipe_title
-{display: flex;
-margin-left: 50px;}
 
-.recipe_link
-{font-size: 30px;
-padding-left: 50px;}
+
+
+
 
 /* ----------------- */
 /* Recipe page styles*/
@@ -74,42 +146,10 @@ h1
  font-size: 90px;
  text-align: center;}
 
-h2 
-{font-weight: 800;
-font-size: 50px;
-text-align: center;}
 
-img 
-{display: block;
-margin: 0 auto;}
 
-.recipe_img
-{height: 500px;
-width: 500px;}
 
-.recipepage_description 
-{margin: 0 auto;
-padding: 25px 250px;
-font-size: 20px}
 
-ol 
-{display: table;    
-margin: 0 auto;
-padding: 25px 250px;
-font-size: 20px}
 
-ul 
-{display: table;
-margin: 0 auto;
-width: 50%;
-font-size: 20px}
 
-.recipelink 
-{display: block;
-margin: 0 auto;
-padding: 25px 250px;
-font-size: 20px}
 
-button 
-{font-size: 20px;
-margin: 15px}
