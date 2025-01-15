@@ -1,44 +1,34 @@
-/* ------------------- */
-/* Whole website styles*/
-/* ------------------- */
+/* ------------- */
+/* General styles*/
+/* ------------- */
 
 * 
 {font-family: Verdana, sans-serif;}
 
-h1 
-{font-weight: 800;
-font-size: 90px;
-text-align: center;
-color: white;}
+.top_bar 
+{background-color: black;
+color: white;
+padding: 20px;
+align-self: center;
+max-width: 2000px;
+margin-left: auto;
+margin-right: auto;}
 
-h2 
-{font-size: 40px; 
-margin: 0; 
-color: white;}
+.bar_container a:link 
+{color: white;}
 
-p, ul, ol
-{font-size: 20px; 
-color: white;}
+.bar_container a:visited 
+{color: white;}
 
-a, a:link, a:visited 
-{font-size: 20px; 
-color: white;}
+.bar_container 
+{display: flex;
+justify-content: space-between;}
 
-/* mobile responsiveness */
+.bar_container_recipe_page
+{display: flex;}
 
-@media (max-width: 968px)
-{    section,
-    .container.second section{
-    flex-direction: column;}
-    
-    .container{
-    margin: 1em 2em;}}
-    
-/* mobile responsiveness */
-
-/* ---------------- */
-/* Front page styles*/
-/* ---------------- */
+.recipe_page
+{margin-left: 20px;}
 
 body,
 .container 
@@ -93,50 +83,34 @@ margin-left: 70px;}
 img 
 {max-width: 300px; border-radius: 2em}
 
-/* ----------------- */
-/* Recipe page styles*/
-/* ----------------- */
-
-.top_bar 
-{background-color: black;
-color: white;
-padding: 20px;
-align-self: center;
-max-width: 2000px;
-margin-left: auto;
-margin-right: auto;}
-
-.bar_container a:link 
-{color: white;}
-
-.bar_container a:visited 
-{color: white;}
-
-.bar_container 
-{display: flex;
-justify-content: space-between;}
-
-#mainheading 
+h1 
 {font-weight: 800;
-font-size: 140px;
-text-align: center;}
+font-size: 90px;
+text-align: center;
+color: white;}
 
-.frontpage 
-{padding-top: 10px;
-width: 1500px;
-padding-left:100px;
-padding-right: 100px;}
+h2 
+{font-size: 40px; 
+margin: 0; 
+color: white;}
 
-.bar_container_recipe_page
-{display: flex;}
+p, ul, ol
+{font-size: 20px; 
+color: white;}
 
-.recipe_page
-{margin-left: 20px;}
+a, a:link, a:visited 
+{font-size: 20px; 
+color: white;}
 
+/* mobile responsiveness */
 
-
-
-
-
-
+@media (max-width: 968px)
+{    section,
+    .container.second section{
+    flex-direction: column;}
+    
+    .container{
+    margin: 1em 2em;}}
+    
+/* mobile responsiveness */
 
